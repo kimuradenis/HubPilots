@@ -30,6 +30,7 @@
 		D216D2D71945D73000883524 /* StatsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2D61945D73000883524 /* StatsModel.m */; };
 		D216D2DA1945D7A600883524 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2D91945D7A600883524 /* SWRevealViewController.m */; };
 		D216D2DD1945DA5B00883524 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2DC1945DA5B00883524 /* MenuItem.m */; };
+		D216D2E01945E70600883524 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2DF1945E70600883524 /* Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		D216D2D91945D7A600883524 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Reveal/SWRevealViewController.m; sourceTree = "<group>"; };
 		D216D2DB1945DA5B00883524 /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuItem.h; path = Menu/MenuItem.h; sourceTree = "<group>"; };
 		D216D2DC1945DA5B00883524 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuItem.m; path = Menu/MenuItem.m; sourceTree = "<group>"; };
+		D216D2DE1945E70600883524 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = Question/Question.h; sourceTree = "<group>"; };
+		D216D2DF1945E70600883524 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = Question/Question.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,8 @@
 				D216D2C11945D6A200883524 /* QuestionViewController.m */,
 				D216D2C31945D6B700883524 /* QuestionModel.h */,
 				D216D2C41945D6B700883524 /* QuestionModel.m */,
+				D216D2DE1945E70600883524 /* Question.h */,
+				D216D2DF1945E70600883524 /* Question.m */,
 			);
 			name = Questions;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D216D2961945D4A400883524 /* AppDelegate.m in Sources */,
+				D216D2E01945E70600883524 /* Question.m in Sources */,
 				D216D2D11945D71000883524 /* RemoveAdsViewController.m in Sources */,
 				D216D2921945D4A400883524 /* main.m in Sources */,
 				D216D2C21945D6A200883524 /* QuestionViewController.m in Sources */,
