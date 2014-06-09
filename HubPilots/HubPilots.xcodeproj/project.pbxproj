@@ -29,6 +29,7 @@
 		D216D2D41945D72000883524 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2D31945D72000883524 /* StatsViewController.m */; };
 		D216D2D71945D73000883524 /* StatsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2D61945D73000883524 /* StatsModel.m */; };
 		D216D2DA1945D7A600883524 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2D91945D7A600883524 /* SWRevealViewController.m */; };
+		D216D2DD1945DA5B00883524 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2DC1945DA5B00883524 /* MenuItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		D216D2D61945D73000883524 /* StatsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatsModel.m; path = Stats/StatsModel.m; sourceTree = "<group>"; };
 		D216D2D81945D7A600883524 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = Reveal/SWRevealViewController.h; sourceTree = "<group>"; };
 		D216D2D91945D7A600883524 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Reveal/SWRevealViewController.m; sourceTree = "<group>"; };
+		D216D2DB1945DA5B00883524 /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuItem.h; path = Menu/MenuItem.h; sourceTree = "<group>"; };
+		D216D2DC1945DA5B00883524 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuItem.m; path = Menu/MenuItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +221,8 @@
 				D216D2C71945D6CC00883524 /* MenuViewController.m */,
 				D216D2C91945D6E000883524 /* MenuModel.h */,
 				D216D2CA1945D6E000883524 /* MenuModel.m */,
+				D216D2DB1945DA5B00883524 /* MenuItem.h */,
+				D216D2DC1945DA5B00883524 /* MenuItem.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 				D216D2CB1945D6E000883524 /* MenuModel.m in Sources */,
 				D216D2C81945D6CC00883524 /* MenuViewController.m in Sources */,
 				D216D2DA1945D7A600883524 /* SWRevealViewController.m in Sources */,
+				D216D2DD1945DA5B00883524 /* MenuItem.m in Sources */,
 				D216D2D41945D72000883524 /* StatsViewController.m in Sources */,
 				D216D2D71945D73000883524 /* StatsModel.m in Sources */,
 			);
@@ -552,6 +558,7 @@
 				D216D2B61945D4A400883524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D216D2B71945D4A400883524 /* Build configuration list for PBXNativeTarget "HubPilotsTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +567,7 @@
 				D216D2B91945D4A400883524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,15 +1,13 @@
 //
-//  MenuModel.h
+//  MenuItem.m
 //  HubPilots
 //
 //  Created by Denis Kimura on 09/06/14.
 //  Copyright (c) 2014 Denis Kimura. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "MenuItem.h"
 
-@interface MenuModel : NSObject
-
-- (NSArray *)getMenuItems;
+@implementation MenuItem
 
 @end
