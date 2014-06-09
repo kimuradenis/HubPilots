@@ -126,35 +126,94 @@
 
 - (IBAction)questionMCAnswer:(id)sender
 {
-    // Record that they answered
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    int mcQuestionsAswered = [userDefaults integerForKey:@"MCQuestionsAnswered"];
-    mcQuestionsAswered++;
-    [userDefaults setInteger:mcQuestionsAswered forKey:@"MCQuestionAnswer"];
     
     
     UIButton *selectedButton = (UIButton *)sender;
+    BOOL isCorrect = NO;
     
     if (selectedButton.tag == _currentQuestion.correctMCQuestionIndex)
     {
         // User got it right
+        isCorrect = YES;
         
         // TODO: display message for correct answer
         
-        // Record
-        int mcQuestionsAnsweredCorrectly = [userDefaults integerForKey:@"MCQuestionsAnsweredCorrectly"];
-        mcQuestionsAnsweredCorrectly++;
-        [userDefaults setInteger:mcQuestionsAnsweredCorrectly forKey:@"MCQuestionsAnsweredCorrectly"];
-    }
+            }
     else
     {
         // User got it wrong
     }
-    [userDefaults synchronize];
+
+    // Save question data
+    [self saveQuestionData:_currentQuestion.questionType withSector:_currentQuestion.questionSector isCorrect:isCorrect];
     
     //display next question
     [self randomizeQuestionForDisplay];
 
+}
+
+- (void)saveQuestionData:(QuizQuestionType)type withSector:(QuizQuestionSector)sector isCorrect:(BOOL)correct
+{
+    NSUserDefaults *userdefaults = [NSUserDefaults standardUserDefaults];
+    
+    if (type == QuestionTypeMC) {
+        // Record that they answered
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        int mcQuestionsAswered = [userDefaults integerForKey:@"MCQuestionsAnswered"];
+        mcQuestionsAswered++;
+        [userDefaults setInteger:mcQuestionsAswered forKey:@"MCQuestionAnswer"];
+
+        if (correct) {
+            // Record
+            int mcQuestionsAnsweredCorrectly = [userDefaults integerForKey:@"MCQuestionsAnsweredCorrectly"];
+            mcQuestionsAnsweredCorrectly++;
+            [userDefaults setInteger:mcQuestionsAnsweredCorrectly forKey:@"MCQuestionsAnsweredCorrectly"];
+
+        }
+        
+        // Save data based on Sector
+        
+        
+        NSString *keyToSave = @"";
+    
+        if (sector == QuestionSectorNavegacao)
+        {
+            keyToSave = @"Navegacao";
+        }
+        else if (sector == QuestionSectorMeteorologia)
+        {
+            keyToSave = @"Meteorologia";
+
+        }
+        else if (sector == QuestionSectorRegulamentos)
+        {
+            keyToSave = @"Regulamentos";
+
+        }
+        else if (sector == QuestionSectorTeoria)
+        {
+            keyToSave = @"Teoria";
+
+        }
+        else if (sector == QuestionSectorConhecimentos)
+        {
+            keyToSave = @"Conhecimentos";
+
+        }
+        
+        int questionAnsweredWithSector = [userDefaults integerForKey:[NSString stringWithFormat:@"%@QuestionsAnswered", keyToSave]];
+        questionAnsweredWithSector++;
+        [userDefaults setInteger:questionAnsweredWithSector forKey:[NSString stringWithFormat:@"%@QuestionsAnswered", keyToSave]];
+        
+        if (correct) {
+            int questionAnsweredCorrectlyWithDifficulty = [userDefaults integerForKey:[NSString stringWithFormat:@"%@QuestionsAnsweredCorrectly", keyToSave]];
+            questionAnsweredCorrectlyWithDifficulty++;
+            [userDefaults setInteger:questionAnsweredCorrectlyWithDifficulty forKey:[NSString stringWithFormat:@"%@QuestionsAnsweredCorrectly", keyToSave]];
+        }
+
+    }
+    
+    [userdefaults synchronize];
 }
 
 @end

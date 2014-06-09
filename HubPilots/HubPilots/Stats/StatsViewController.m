@@ -30,6 +30,36 @@
     // Do any additional setup after loading the view.
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    //load and display stats
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    // Navegacao
+    int navegacaoQuestionsAnswered = [userDefaults integerForKey:@"NavegacaoQuestionsAnswered"];
+    int navegacaoQuestionsCorrect = [userDefaults integerForKey:@"NavegacaoQuestionsAnsweredCorrectly"];
+    self.navegacaoQuestionStats.text = [NSString stringWithFormat:@"Navegação %i / %i", navegacaoQuestionsCorrect, navegacaoQuestionsAnswered];
+    
+    // Meteorologia
+    int meteorologiaQuestionsAnswered = [userDefaults integerForKey:@"MeteorologiaQuestionsAnswered"];
+    int meteorologiaQuestionsCorrect = [userDefaults integerForKey:@"MeteorologiaQuestionsAnsweredCorrectly"];
+    self.meteorologiaQuestionStats.text = [NSString stringWithFormat:@"Meteorologia %i / %i", meteorologiaQuestionsCorrect, meteorologiaQuestionsAnswered];
+    
+    // Regulamentos
+    int regulamentosQuestionsAnswered = [userDefaults integerForKey:@"RegulamentosQuestionsAnswered"];
+    int regulamentosQuestionsCorrect = [userDefaults integerForKey:@"RegulamentosQuestionsAnsweredCorrectly"];
+    self.navegacaoQuestionStats.text = [NSString stringWithFormat:@"Regulamentos %i / %i", regulamentosQuestionsCorrect, regulamentosQuestionsAnswered];
+    
+    // Teoria
+    int teoriaQuestionsAnswered = [userDefaults integerForKey:@"TeoriaQuestionsAnswered"];
+    int teoriaQuestionsCorrect = [userDefaults integerForKey:@"TeoriaQuestionsAnsweredCorrectly"];
+    self.navegacaoQuestionStats.text = [NSString stringWithFormat:@"Teoria %i / %i", teoriaQuestionsCorrect, teoriaQuestionsAnswered];
+    
+    // Conhecimentos
+    int conhecimentosQuestionsAnswered = [userDefaults integerForKey:@"ConhecimentosQuestionsAnswered"];
+    int conhecimentosQuestionsCorrect = [userDefaults integerForKey:@"ConhecimentosQuestionsAnsweredCorrectly"];
+    self.conhecimentosQuestionStats.text = [NSString stringWithFormat:@"Navegação %i / %i", conhecimentosQuestionsCorrect, conhecimentosQuestionsAnswered];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

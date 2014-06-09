@@ -10,4 +10,11 @@
 
 @interface StatsViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *totalQuestionsAswered;
+@property (weak, nonatomic) IBOutlet UILabel *navegacaoQuestionStats;
+@property (weak, nonatomic) IBOutlet UILabel *meteorologiaQuestionStats;
+@property (weak, nonatomic) IBOutlet UILabel *teoriaQuestionStats;
+@property (weak, nonatomic) IBOutlet UILabel *regulamentosQuestionStats;
+@property (weak, nonatomic) IBOutlet UILabel *conhecimentosQuestionStats;
+
 @end
