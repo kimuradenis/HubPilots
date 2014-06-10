@@ -31,6 +31,8 @@
 		D216D2DA1945D7A600883524 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2D91945D7A600883524 /* SWRevealViewController.m */; };
 		D216D2DD1945DA5B00883524 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2DC1945DA5B00883524 /* MenuItem.m */; };
 		D216D2E01945E70600883524 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2DF1945E70600883524 /* Question.m */; };
+		D216D2E21947356100883524 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = D216D2E11947356100883524 /* questions.json */; };
+		D216D2E519473D3D00883524 /* ResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2E419473D3D00883524 /* ResultView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,9 @@
 		D216D2DC1945DA5B00883524 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuItem.m; path = Menu/MenuItem.m; sourceTree = "<group>"; };
 		D216D2DE1945E70600883524 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = Question/Question.h; sourceTree = "<group>"; };
 		D216D2DF1945E70600883524 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = Question/Question.m; sourceTree = "<group>"; };
+		D216D2E11947356100883524 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		D216D2E319473D3D00883524 /* ResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultView.h; path = Question/ResultView.h; sourceTree = "<group>"; };
+		D216D2E419473D3D00883524 /* ResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultView.m; path = Question/ResultView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +165,7 @@
 		D216D28C1945D4A300883524 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D216D2E11947356100883524 /* questions.json */,
 				D216D28D1945D4A400883524 /* HubPilots-Info.plist */,
 				D216D28E1945D4A400883524 /* InfoPlist.strings */,
 				D216D2911945D4A400883524 /* main.m */,
@@ -204,6 +210,8 @@
 				D216D2C41945D6B700883524 /* QuestionModel.m */,
 				D216D2DE1945E70600883524 /* Question.h */,
 				D216D2DF1945E70600883524 /* Question.m */,
+				D216D2E319473D3D00883524 /* ResultView.h */,
+				D216D2E419473D3D00883524 /* ResultView.m */,
 			);
 			name = Questions;
 			sourceTree = "<group>";
@@ -327,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D216D29E1945D4A400883524 /* Images.xcassets in Resources */,
+				D216D2E21947356100883524 /* questions.json in Resources */,
 				D216D2901945D4A400883524 /* InfoPlist.strings in Resources */,
 				D216D2991945D4A400883524 /* Main.storyboard in Resources */,
 			);
@@ -348,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D216D2961945D4A400883524 /* AppDelegate.m in Sources */,
+				D216D2E519473D3D00883524 /* ResultView.m in Sources */,
 				D216D2E01945E70600883524 /* Question.m in Sources */,
 				D216D2D11945D71000883524 /* RemoveAdsViewController.m in Sources */,
 				D216D2921945D4A400883524 /* main.m in Sources */,

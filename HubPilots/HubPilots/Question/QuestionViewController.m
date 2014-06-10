@@ -15,6 +15,9 @@
 {
     Question *_currentQuestion;
 //    UITapGestureRecognizer *_scrollViewTapGestureRecognizer;
+    
+    ResultView *_resultView;
+    UIView *_dimmedBackground;
 }
 
 @end
@@ -54,6 +57,20 @@
     
     // Display the question
     [self displayCurrentQuestion];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    //Create a result View
+    _resultView = [[ResultView alloc] initWithFrame:CGRectMake(10, 10, self.view.frame.size.width - 20, self.view.frame.size.height - 20)];
+    _resultView.delegate = self;
+    
+    //Create dimmed bg
+    _dimmedBackground = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    _dimmedBackground.alpha = 0.3;
 }
 
 - (void)didReceiveMemoryWarning
@@ -131,19 +148,41 @@
     UIButton *selectedButton = (UIButton *)sender;
     BOOL isCorrect = NO;
     
+    NSString *userAnswer;
+    switch (selectedButton.tag) {
+        case 1:
+            userAnswer = _currentQuestion.questionAnswer1;
+            break;
+        case 2:
+            userAnswer = _currentQuestion.questionAnswer2;
+            break;
+        case 3:
+            userAnswer = _currentQuestion.questionAnswer3;
+            break;
+        case 4:
+            userAnswer = _currentQuestion.questionAnswer4;
+            break;
+            
+        default:
+            break;
+    }
+    
     if (selectedButton.tag == _currentQuestion.correctMCQuestionIndex)
     {
         // User got it right
         isCorrect = YES;
         
-        // TODO: display message for correct answer
-        
-            }
+    }
     else
     {
         // User got it wrong
     }
 
+    // Display message for answer
+    [_resultView showResultForTextQuestion:isCorrect forUserAnswer:userAnswer forQuestion:_currentQuestion];
+    [self.view addSubview:_dimmedBackground];
+    [self.view addSubview:_resultView];
+    
     // Save question data
     [self saveQuestionData:_currentQuestion.questionType withSector:_currentQuestion.questionSector isCorrect:isCorrect];
     
@@ -214,6 +253,14 @@
     }
     
     [userdefaults synchronize];
+}
+
+#pragma mark Result View Delegate Methods
+
+- (void)resultViewDismissed
+{
+    [_dimmedBackground removeFromSuperview];
+    [_resultView removeFromSuperview];
 }
 
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "QuestionModel.h"
 #import "Question.h"
+#import "ResultView.h"
 
 @interface QuestionViewController : UIViewController
 
