@@ -38,15 +38,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (IBAction)feedbackButtonClicked:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
+    mailComposer.mailComposeDelegate = self;
+    [mailComposer setSubject:@"HubPilots - Feedback"];
+    [mailComposer setToRecipients:@[@"kimuradenis@gmail.com"]];
+    
+    [self presentViewController:mailComposer animated:YES completion:nil];
+    
 }
-*/
+
+- (IBAction)rateButtonClicked:(id)sender
+{
+    
+}
+
+- (IBAction)moreButtonClicked:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://hubpilots.com"]];
+}
+
+#pragma mark Mail Compose Delegate Methods
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    // Dismiss COmposer
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+}
 
 @end

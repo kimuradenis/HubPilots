@@ -33,6 +33,7 @@
 		D216D2E01945E70600883524 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2DF1945E70600883524 /* Question.m */; };
 		D216D2E21947356100883524 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = D216D2E11947356100883524 /* questions.json */; };
 		D216D2E519473D3D00883524 /* ResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2E419473D3D00883524 /* ResultView.m */; };
+		D216D2E7194749AF00883524 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D216D2E6194749AF00883524 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		D216D2E11947356100883524 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		D216D2E319473D3D00883524 /* ResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultView.h; path = Question/ResultView.h; sourceTree = "<group>"; };
 		D216D2E419473D3D00883524 /* ResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultView.m; path = Question/ResultView.m; sourceTree = "<group>"; };
+		D216D2E6194749AF00883524 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D216D2E7194749AF00883524 /* MessageUI.framework in Frameworks */,
 				D216D2881945D4A300883524 /* CoreGraphics.framework in Frameworks */,
 				D216D28A1945D4A300883524 /* UIKit.framework in Frameworks */,
 				D216D2861945D4A300883524 /* Foundation.framework in Frameworks */,
@@ -136,6 +139,7 @@
 		D216D2841945D4A300883524 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D216D2E6194749AF00883524 /* MessageUI.framework */,
 				D216D2851945D4A300883524 /* Foundation.framework */,
 				D216D2871945D4A300883524 /* CoreGraphics.framework */,
 				D216D2891945D4A300883524 /* UIKit.framework */,
