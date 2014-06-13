@@ -24,6 +24,8 @@
 
 @implementation QuestionViewController
 
+@synthesize questionHeaderLabel, answerHeaderLabel;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -98,15 +100,40 @@
 
 - (void)hideAllQuestionElements
 {
+    // Hide the header elements
+    self.questionHeaderLabel.alpha = 0.0;
+    self.answerHeaderLabel.alpha = 0.0;
+    
+    
     self.questionText.hidden = YES;
+    CGRect questionTextFrame = self.questionText.frame;
+    questionTextFrame.origin.y = 2000;
+    self.questionText.frame = questionTextFrame;
+    
+    // Hide answer buttons
+    
     self.questionMCAnswer1.hidden = YES;
+    CGRect buttonFrame = self.questionMCAnswer1.frame;
+    buttonFrame.origin.y = 2000;
+    self.questionMCAnswer1.frame = buttonFrame;
+    
     self.questionMCAnswer2.hidden = YES;
+    buttonFrame = self.questionMCAnswer2.frame;
+    buttonFrame.origin.y = 2000;
+    self.questionMCAnswer2.frame = buttonFrame;
+    
     self.questionMCAnswer3.hidden = YES;
+    buttonFrame = self.questionMCAnswer3.frame;
+    buttonFrame.origin.y = 2000;
+    self.questionMCAnswer3.frame = buttonFrame;
+    
     self.questionMCAnswer4.hidden = YES;
+    buttonFrame = self.questionMCAnswer4.frame;
+    buttonFrame.origin.y = 2000;
+    self.questionMCAnswer4.frame = buttonFrame;
     
 }
 #pragma mark Questin Methods
-
 - (void)displayCurrentQuestion
 {
     switch (_currentQuestion.questionType) {
@@ -137,6 +164,62 @@
     self.questionMCAnswer2.hidden = NO;
     self.questionMCAnswer3.hidden = NO;
     self.questionMCAnswer4.hidden = NO;
+    
+    // Animate label and button back to position
+    [UIView animateWithDuration:1.0 animations:^(void){
+        CGRect questionTextFrame = self.questionText.frame;
+        questionTextFrame.origin.y = 101;
+        self.questionText.frame = questionTextFrame;
+        
+       }];
+    
+    [UIView animateWithDuration:1 delay:0.1 options:UIViewAnimationOptionCurveEaseIn animations:^(void){
+        // Position answer 1
+        CGRect answerButton1Frame = self.questionMCAnswer1.frame;
+        answerButton1Frame.origin.y = 225;
+        self.questionMCAnswer1.frame = answerButton1Frame;
+    } completion:nil];
+    
+    
+    
+    [UIView animateWithDuration:1 delay:0.2 options:UIViewAnimationOptionCurveEaseIn animations:^(void){
+        // Position answer 2
+        CGRect answerButton2Frame = self.questionMCAnswer2.frame;
+        answerButton2Frame.origin.y = 300;
+        self.questionMCAnswer2.frame = answerButton2Frame;
+    } completion:nil];
+    
+
+    
+    [UIView animateWithDuration:1 delay:0.3 options:UIViewAnimationOptionCurveEaseIn animations:^(void){
+        // Position answer 3
+        CGRect answerButton3Frame = self.questionMCAnswer3.frame;
+        answerButton3Frame.origin.y = 375;
+        self.questionMCAnswer3.frame = answerButton3Frame;
+    } completion:nil];
+
+    
+
+    
+    [UIView animateWithDuration:1 delay:0.4 options:UIViewAnimationOptionCurveEaseIn animations:^(void){
+        // Position answer 4
+        CGRect answerButton4Frame = self.questionMCAnswer4.frame;
+        answerButton4Frame.origin.y = 450;
+        self.questionMCAnswer4.frame = answerButton4Frame;
+    } completion:nil];
+    
+    
+    [UIView animateWithDuration:0.5 delay:1 options:UIViewAnimationOptionCurveEaseIn animations:^(void){
+        // Reveal Header labels
+        self.questionHeaderLabel.alpha = 1.0;
+        self.answerHeaderLabel.alpha = 1.0;
+        
+    } completion:nil];
+
+    
+    
+
+    
 }
 
 - (void)randomizeQuestionForDisplay
