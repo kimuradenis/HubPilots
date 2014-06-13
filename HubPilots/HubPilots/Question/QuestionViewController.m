@@ -58,6 +58,22 @@
     // Display the question
     [self displayCurrentQuestion];
     
+    // Add background behind status bar
+    UIView *statusBarBg =[[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 20)];
+    statusBarBg.backgroundColor = [UIColor colorWithRed:144/255.0 green:192/255.0 blue:210/255.0 alpha:1.0];
+    [self.view addSubview:statusBarBg];
+    
+    // Set Button styles
+    UIColor *buttonBorderColor = [UIColor colorWithRed:232/255.0 green:232/255.0 blue:232/255.0 alpha:1.0];
+    
+    [self.questionMCAnswer1.layer setBorderWidth:1.0];
+    [self.questionMCAnswer2.layer setBorderWidth:1.0];
+    [self.questionMCAnswer3.layer setBorderWidth:1.0];
+    [self.questionMCAnswer4.layer setBorderWidth:1.0];
+    [self.questionMCAnswer1.layer setBorderColor:buttonBorderColor.CGColor];
+    [self.questionMCAnswer2.layer setBorderColor:buttonBorderColor.CGColor];
+    [self.questionMCAnswer3.layer setBorderColor:buttonBorderColor.CGColor];
+    [self.questionMCAnswer4.layer setBorderColor:buttonBorderColor.CGColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -70,6 +86,7 @@
     
     //Create dimmed bg
     _dimmedBackground = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    _dimmedBackground.backgroundColor = [UIColor blackColor];
     _dimmedBackground.alpha = 0.3;
 }
 
@@ -131,6 +148,10 @@
     //display question
     [self displayCurrentQuestion];
     
+}
+
+- (IBAction)menuButtonTapped:(id)sender {
+    [self.revealViewController revealToggleAnimated:YES];
 }
 
 #pragma mark Question Answer Handlers

@@ -34,5 +34,5 @@
 
 - (void)showResultForTextQuestion:(BOOL)wasCorrect forUserAnswer:(NSString*)useranswer forQuestion:(Question*)question;
 
-- (void)showResultForImageQuestion:(BOOL)wasCorrect forQuestion:(Question*)question;
+//- (void)showResultForImageQuestion:(BOOL)wasCorrect forQuestion:(Question*)question;
 @end

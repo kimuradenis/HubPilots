@@ -30,6 +30,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self.tableView setContentInset:UIEdgeInsetsMake(64, 0, 0, 0)];
+
+    
     //Set self as Datasource and Delegate for the table view
     
     self.tableView.delegate = self;
@@ -52,6 +55,11 @@
     return  self.menuItems.count;
 }
 
+-(float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60.0;
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //Retrieve Cell
@@ -61,9 +69,14 @@
     //Get Menu Item
     MenuItem *item = self.menuItems[indexPath.row];
     
-    //Set Menu text
-    menuCell.textLabel.text = item.menuTitle;
+    // Get imageview
+    UIImageView *iconImageView = (UIImageView *)[menuCell viewWithTag:2];
+    UILabel *menuItemTitle = (UILabel *)[menuCell viewWithTag:1];
     
+    //Set Menu text
+    menuItemTitle.text = item.menuTitle;
+    iconImageView.image = [UIImage imageNamed:item.menuIcon];
+
     return menuCell;
 }
 

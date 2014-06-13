@@ -11,7 +11,7 @@
 #import "Question.h"
 #import "ResultView.h"
 
-@interface QuestionViewController : UIViewController
+@interface QuestionViewController : UIViewController <ResultViewProtocol>
 
 @property (strong, nonatomic) QuestionModel *model;
 @property (strong, nonatomic) NSArray *questions;
