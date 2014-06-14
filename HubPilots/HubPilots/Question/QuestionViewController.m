@@ -48,9 +48,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    // Add tap gesture recognizer to scrollview
+/*    // Add tap gesture recognizer to scrollview
     _scrollViewTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollViewTapped)];
-    [self.questionScrollView addGestureRecognizer:_scrollViewTapGestureRecognizer];
+    [self.questionScrollView addGestureRecognizer:_scrollViewTapGestureRecognizer]; */
     
     // Add pan gesture recognizer for menu reveal
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
@@ -102,9 +102,17 @@
     _dimmedBackground.backgroundColor = [UIColor blackColor];
     _dimmedBackground.alpha = 0.4;
     
-    // Create iAd banner and place at bottom
-    _adView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
-    _adView.delegate = self;
+    // Check flag to see if we should show ad
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *flag = [defaults objectForKey:@"removeads"];
+    if (![flag isEqualToString:@"bought"])
+    {
+        // Create iAd banner and place at bottom
+        _adView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
+        _adView.delegate = self;
+    }
+
     
 }
 
@@ -191,16 +199,6 @@
     
     // Adjust Scrollview
     self.questionScrollView.contentSize = CGSizeMake(self.questionScrollView.frame.size.width, self.skipButton.frame.origin.y + self.skipButton.frame.size.height + 30);
-    
-    
- /*   //Reveal question elements
-    self.questionText.hidden = NO;
-    self.questionMCAnswer1.hidden = NO;
-    self.questionMCAnswer2.hidden = NO;
-    self.questionMCAnswer3.hidden = NO;
-    self.questionMCAnswer4.hidden = NO;
-    self.answerBackgroundView.hidden = NO;
-    self.answerHeaderLabel.hidden = NO; */
     
     // Animate label and button back to position
     [UIView animateWithDuration:1.0 animations:^(void){

@@ -35,6 +35,9 @@
 		D216D2E519473D3D00883524 /* ResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2E419473D3D00883524 /* ResultView.m */; };
 		D216D2E7194749AF00883524 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D216D2E6194749AF00883524 /* MessageUI.framework */; };
 		D216D2E9194C896B00883524 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D216D2E8194C896B00883524 /* iAd.framework */; };
+		D216D2EB194C90BE00883524 /* products_id.plist in Resources */ = {isa = PBXBuildFile; fileRef = D216D2EA194C90BE00883524 /* products_id.plist */; };
+		D216D2EF194C914F00883524 /* StoreKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2EE194C914F00883524 /* StoreKitHelper.m */; };
+		D216D2F1194C91D100883524 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D216D2F0194C91D100883524 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,10 @@
 		D216D2E419473D3D00883524 /* ResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultView.m; path = Question/ResultView.m; sourceTree = "<group>"; };
 		D216D2E6194749AF00883524 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D216D2E8194C896B00883524 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		D216D2EA194C90BE00883524 /* products_id.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = products_id.plist; sourceTree = "<group>"; };
+		D216D2ED194C914F00883524 /* StoreKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoreKitHelper.h; path = Helpers/StoreKitHelper.h; sourceTree = "<group>"; };
+		D216D2EE194C914F00883524 /* StoreKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoreKitHelper.m; path = Helpers/StoreKitHelper.m; sourceTree = "<group>"; };
+		D216D2F0194C91D100883524 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D216D2F1194C91D100883524 /* StoreKit.framework in Frameworks */,
 				D216D2E9194C896B00883524 /* iAd.framework in Frameworks */,
 				D216D2E7194749AF00883524 /* MessageUI.framework in Frameworks */,
 				D216D2881945D4A300883524 /* CoreGraphics.framework in Frameworks */,
@@ -142,6 +150,7 @@
 		D216D2841945D4A300883524 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D216D2F0194C91D100883524 /* StoreKit.framework */,
 				D216D2E8194C896B00883524 /* iAd.framework */,
 				D216D2E6194749AF00883524 /* MessageUI.framework */,
 				D216D2851945D4A300883524 /* Foundation.framework */,
@@ -155,6 +164,7 @@
 		D216D28B1945D4A300883524 /* HubPilots */ = {
 			isa = PBXGroup;
 			children = (
+				D216D2EC194C910E00883524 /* Helper */,
 				D216D2941945D4A400883524 /* AppDelegate.h */,
 				D216D2951945D4A400883524 /* AppDelegate.m */,
 				D216D2971945D4A400883524 /* Main.storyboard */,
@@ -178,6 +188,7 @@
 				D216D28E1945D4A400883524 /* InfoPlist.strings */,
 				D216D2911945D4A400883524 /* main.m */,
 				D216D2931945D4A400883524 /* HubPilots-Prefix.pch */,
+				D216D2EA194C90BE00883524 /* products_id.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -266,6 +277,15 @@
 			name = RemoveAds;
 			sourceTree = "<group>";
 		};
+		D216D2EC194C910E00883524 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D216D2ED194C914F00883524 /* StoreKitHelper.h */,
+				D216D2EE194C914F00883524 /* StoreKitHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -346,6 +366,7 @@
 				D216D2E21947356100883524 /* questions.json in Resources */,
 				D216D2901945D4A400883524 /* InfoPlist.strings in Resources */,
 				D216D2991945D4A400883524 /* Main.storyboard in Resources */,
+				D216D2EB194C90BE00883524 /* products_id.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +394,7 @@
 				D216D2CE1945D6FC00883524 /* AboutViewController.m in Sources */,
 				D216D2C51945D6B700883524 /* QuestionModel.m in Sources */,
 				D216D2CB1945D6E000883524 /* MenuModel.m in Sources */,
+				D216D2EF194C914F00883524 /* StoreKitHelper.m in Sources */,
 				D216D2C81945D6CC00883524 /* MenuViewController.m in Sources */,
 				D216D2DA1945D7A600883524 /* SWRevealViewController.m in Sources */,
 				D216D2DD1945DA5B00883524 /* MenuItem.m in Sources */,

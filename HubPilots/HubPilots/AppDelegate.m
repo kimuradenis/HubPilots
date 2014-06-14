@@ -14,6 +14,10 @@
 {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
+    // Create a transaction observer and set it as the observer
+    self.observer = [[StoreKitHelper alloc] init];
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self.observer];
+    
     // Override point for customization after application launch.
     return YES;
 }

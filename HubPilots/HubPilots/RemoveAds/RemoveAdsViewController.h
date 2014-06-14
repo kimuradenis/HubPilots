@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StoreKitHelper.h"
 
-@interface RemoveAdsViewController : UIViewController
+@interface RemoveAdsViewController : UIViewController <StoreKitHelperProtocol>
+
+@property (weak, nonatomic) IBOutlet UILabel *productInfoLabel;
+@property (weak, nonatomic) IBOutlet UIButton *productPurchaseButton;
 
 @end
