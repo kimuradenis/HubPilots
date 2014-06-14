@@ -19,6 +19,15 @@
 @property (nonatomic) QuizQuestionSector questionSector;
 @property (weak, nonatomic) IBOutlet UIScrollView *questionScrollView;
 
+// Background View for question type
+@property (weak, nonatomic) IBOutlet UIView *questionStatusBackgroundView;
+@property (weak, nonatomic) IBOutlet UILabel *questionStatusLabel;
+
+// Background for answer area
+
+@property (weak, nonatomic) IBOutlet UIView *answerBackgroundView;
+
+
 //Properties for UIElements
 @property (weak, nonatomic) IBOutlet UILabel *questionHeaderLabel;
 
