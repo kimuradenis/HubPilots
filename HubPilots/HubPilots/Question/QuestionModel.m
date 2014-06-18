@@ -16,11 +16,11 @@
     self = [super init];
     if (self)
     {
-        self.navegacao = [[NSMutableArray alloc] init];
-        self.meteorologia = [[NSMutableArray alloc] init];
-        self.regulamentos = [[NSMutableArray alloc] init];
-        self.teoria = [[NSMutableArray alloc] init];
-        self.conhecimentos = [[NSMutableArray alloc] init];
+        self.navegacaoQuestions = [[NSMutableArray alloc] init];
+        self.meteorologiaQuestions = [[NSMutableArray alloc] init];
+        self.regulamentosQuestions = [[NSMutableArray alloc] init];
+        self.teoriaQuestions = [[NSMutableArray alloc] init];
+        self.conhecimentosQuestions = [[NSMutableArray alloc] init];
         
         // Load questions.json and parse out questions into arrays
         [self loadQuestions];
@@ -34,23 +34,23 @@
 {
     if (sector == QuestionSectorNavegacao)
     {
-        return self.navegacao;
+        return self.navegacaoQuestions;
     }
     else if (sector == QuestionSectorMeteorologia)
     {
-        return self.meteorologia;
+        return self.meteorologiaQuestions;
     }
     else if (sector == QuestionSectorRegulamentos)
     {
-        return self.regulamentos;
+        return self.regulamentosQuestions;
     }
     else if (sector == QuestionSectorTeoria)
     {
-        return self.teoria;
+        return self.teoriaQuestions;
     }
     else if (sector == QuestionSectorConhecimentos)
     {
-        return self.conhecimentos;
+        return self.conhecimentosQuestions;
     }
     else
     {
@@ -70,25 +70,26 @@
     
     NSDictionary *myJsonDictionary = [NSJSONSerialization JSONObjectWithData:myJsonData options:NSJSONReadingAllowFragments error:nil];
     
+    
     // Parse out navegacao questions
     NSArray *navegacaoJsonArray = myJsonDictionary[@"navegacao"];
-    self.navegacao = [self parseJsonArrayIntoQuestions:navegacaoJsonArray forSector:QuestionSectorNavegacao];
+    self.navegacaoQuestions = [self parseJsonArrayIntoQuestions:navegacaoJsonArray forSector:QuestionSectorNavegacao];
     
     // Parse out meteorologia questions
     NSArray *meteorologiaJsonArray = myJsonDictionary[@"meteorologia"];
-    self.meteorologia = [self parseJsonArrayIntoQuestions:meteorologiaJsonArray forSector:QuestionSectorMeteorologia];
+    self.meteorologiaQuestions = [self parseJsonArrayIntoQuestions:meteorologiaJsonArray forSector:QuestionSectorMeteorologia];
     
     // Parse out regulamentos questions
     NSArray *regulamentosJsonArray = myJsonDictionary[@"regulamentos"];
-    self.regulamentos = [self parseJsonArrayIntoQuestions:regulamentosJsonArray forSector:QuestionSectorRegulamentos];
+    self.regulamentosQuestions = [self parseJsonArrayIntoQuestions:regulamentosJsonArray forSector:QuestionSectorRegulamentos];
     
     // Parse out teoria questions
     NSArray *teoriaJsonArray = myJsonDictionary[@"teoria"];
-    self.teoria = [self parseJsonArrayIntoQuestions:teoriaJsonArray forSector:QuestionSectorTeoria];
+    self.teoriaQuestions = [self parseJsonArrayIntoQuestions:teoriaJsonArray forSector:QuestionSectorTeoria];
     
     // Parse out conhecimentos questions
     NSArray *conhecimentosJsonArray = myJsonDictionary[@"conhecimentos"];
-    self.conhecimentos = [self parseJsonArrayIntoQuestions:conhecimentosJsonArray forSector:QuestionSectorConhecimentos];
+    self.conhecimentosQuestions = [self parseJsonArrayIntoQuestions:conhecimentosJsonArray forSector:QuestionSectorConhecimentos];
 }
 
 - (NSMutableArray*)parseJsonArrayIntoQuestions:(NSArray *)jsonArray forSector:(QuizQuestionSector)sector

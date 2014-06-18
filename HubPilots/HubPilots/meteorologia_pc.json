@@ -1,0 +1,207 @@
+{
+    
+	"meteorologia" :
+    [
+        {
+        "type" : "mc",
+        "questionId" : "01",
+        "question" : "Tipos de Nuvens?",
+        "answer0" : "BC, BBY, CY",
+        "answer1" : "CB, TCU",
+        "answer2" : "CTU, BC",
+        "answer3" : "Cumullos",
+        "correctanswer" : 2
+        },
+        {
+        "type" : "mc",
+        "questionId" : "02",
+        "question" : "Tempo",
+        "answer0" : "Tempo é representado no Metar",
+        "answer1" : "Tempo é representado no TAF",
+        "answer2" : "Tempo de voo",
+        "answer3" : "Nenhuma das alternativas",
+        "correctanswer" : 2
+        },
+        {
+        "type" : "mc",
+        "questionId" : "03",
+        "question" : "SBSP 151500 5000 12/25 Q1023",
+        "answer0" : "TAF",
+        "answer1" : "Metar",
+        "answer2" : "Confeccionado as 12 hrs",
+        "answer3" : "QFE 1023",
+        "correctanswer" : 2
+        },
+        {
+        "type" : "mc",
+        "questionId" : "04",
+        "question" : "No METAR SBGL 071500 15009KT 7000 FEW018 SCT100 28/23 Q1012, podemos afirmar que:",
+        "answer0" : "o QNH é de 1012",
+        "answer1" : "Está nublado a 10.000ft.",
+        "answer2" : "Existem poucas nuvens a 10.000ft.",
+        "answer3" : "A visibilidade é de 7.000ft.",
+        "correctanswer" : 1
+        },
+        {
+        "type" : "mc",
+        "questionId" : "05",
+        "question" : "A direção do vento informada no METAR é em relação:",
+        "answer0" : "ao norte verdadeiro",
+        "answer1" : "ao norte magnético",
+        "answer2" : "ao sul verdadeiro",
+        "answer3" : "ao sul magnético",
+        "correctanswer" : 1
+        },
+        {
+        "type" : "mc",
+        "questionId" : "06",
+        "question" : "Nuvens que mais comumente interditam o aeródromo para operações IFR são:",
+        "answer0" : "AS",
+        "answer1" : "ST",
+        "answer2" : "CU",
+        "answer3" : "SC",
+        "correctanswer" : 2
+        },
+        {
+        "type" : "mc",
+        "questionId" : "07",
+        "question" : "Uma aeronave encontra-se pousada numa pista, cuja elevação é de 2.500 pés. A pressão reduzida ao nível do mar é de 1003,2 hpa. Com tais informações, pode-se afirmar que a altitude pressão da aeronave é de:",
+        "answer0" : "2.200 pés",
+        "answer1" : "2.500 pés",
+        "answer2" : "2.800 pés",
+        "answer3" : "3.100 pés",
+        "correctanswer" : 3
+        },
+        {
+        "type" : "mc",
+        "questionId" : "08",
+        "question" : "Quando encontramos em um METAR BKN030, sabemos que foi observado:",
+        "answer0" : "nuvens a 330 metros",
+        "answer1" : "nuvens a 33.000 ft.",
+        "answer2" : "nuvens a 3.300 ft.",
+        "answer3" : "nuvens a 33.000 metros",
+        "correctanswer" : 2
+        },
+        {
+        "type" : "mc",
+        "questionId" : "09",
+        "question" : "A mensagem meteorológica SIGMET é expedida por um órgão, cuja sigla é:",
+        "answer0" : "CMA-1",
+        "answer1" : "EMS",
+        "answer2" : "CMV",
+        "answer3" : "CMM",
+        "correctanswer" : 3
+        },
+        {
+        "type" : "mc",
+        "questionId" : "10",
+        "question" : "Na mensagem SIGMET 6 VALID 192320/2000320 SBBE BELEM FIR OBS CB OVER SBBE AT 2300Z TOPS FL380 NC, há:",
+        "answer0" : "previsão de CB com topo no FL380 às 23Z",
+        "answer1" : "observação de CB sobre SBBE às 23 UTC",
+        "answer2" : "a mensagem foi confeccionada por um CMA-1",
+        "answer3" : "observação de CB encoberto",
+        "correctanswer" : 2
+        },
+        {
+        "type" : "mc",
+        "questionId" : "11",
+        "question" : "Nuvens que mais comumente interditam o aeródromo para operações IFR são:",
+        "answer0" : "AS",
+        "answer1" : "ST",
+        "answer2" : "CU",
+        "answer3" : "SC",
+        "correctanswer" : 2
+        },
+        {
+        "type" : "mc",
+        "questionId" : "12",
+        "question" : "Uma aeronave sobrevoa SBBR na altura de 2.000 pés. A elevação do aeródromo é 3.450 pés. A pressão ap nível do mar, no momento é de 1008,2 hPa. Qual será a altitude pressão da aeronave, em pés:",
+        "answer0" : "5000",
+        "answer1" : "5300",
+        "answer2" : "5600",
+        "answer3" : "5450",
+        "correctanswer" : 3
+     },
+     {
+     "type" : "mc",
+     "questionId" : "13",
+     "question" : "A principal fase de uma trovoada é chamada de fase de:",
+     "answer0" : "cirrus",
+     "answer1" : "dissipação",
+     "answer2" : "cumulus",
+     "answer3" : "maturidade",
+     "correctanswer" : 4
+     },
+     {
+     "type" : "mc",
+     "questionId" : "14",
+     "question" : "Uma aeronave voando no FL060, com temperatura verdadeira de -7˚C, estará:",
+     "answer0" : "Sem erro de pressão",
+     "answer1" : "Voando acima da altitude de pressão",
+     "answer2" : "Voando abaixo da altitude de pressão",
+     "answer3" : "Voando na própria altitude de pressão",
+     "correctanswer" : 3
+     },
+     {
+     "type" : "mc",
+     "questionId" : "15",
+     "question" : "Cada Centro Meteorológico confecciona diariamente mensagens GAMET em número de:",
+     "answer0" : "02",
+     "answer1" : "04",
+     "answer2" : "06",
+     "answer3" : "24",
+     "correctanswer" : 2
+     },
+     {
+     "type" : "mc",
+     "questionId" : "16",
+     "question" : "A condição de temperatura ISA -15 para o FL080, corresponde a:",
+     "answer0" : "-13˚C",
+     "answer1" : "-14˚C",
+     "answer2" : "-15˚C",
+     "answer3" : "-16˚C",
+     "correctanswer" : 4
+     },
+     {
+     "type" : "mc",
+     "questionId" : "17",
+     "question" : "A circulação ciclônica tem sentido:",
+     "answer0" : "NESO no hemisfério sul",
+     "answer1" : "NESO no hemisfério norte",
+     "answer2" : "NOSE no hemisfério sul",
+     "answer3" : "NOSE nos pólos",
+     "correctanswer" : 1
+     },
+     {
+     "type" : "mc",
+     "questionId" : "18",
+     "question" : "O código AIRMET refere-se às condições meteorológicas:",
+     "answer0" : "previstas",
+     "answer1" : "previstas ou observadas",
+     "answer2" : "observadas",
+     "answer3" : "previstas ou observadas a partir do FL100",
+     "correctanswer" : 2
+     },
+     {
+     "type" : "mc",
+     "questionId" : "19",
+     "question" : "Uma aeronave, voando no FL080, teve seu altímetro ajustado para QNH do local, que era 1018,2 hPa. O altímetro passou a indicar:",
+     "answer0" : "FL060",
+     "answer1" : "FL080",
+     "answer2" : "FL090",
+     "answer3" : "nenhum FL",
+     "correctanswer" : 4
+     },
+     {
+     "type" : "mc",
+     "questionId" : "20",
+     "question" : "O código SIGMET dará uma descrição concisa em linguagem abreviada de fenômenos meteorológicos na rota, que possam afetar a segurança das aeronaves, estes fenômenos podem ser:",
+     "answer0" : "somente previstos",
+     "answer1" : "previstos e observados",
+     "answer2" : "somente observados",
+     "answer3" : "somente reportados por aeronaves",
+     "correctanswer" : 2
+     }
+    ],
+	"hard" : []
+}

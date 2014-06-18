@@ -1,0 +1,207 @@
+{
+    
+	"regulamentos" :
+    [
+        {
+        "type" : "mc",
+        "questionId" : "01",
+        "question" : "Sempre que uma aeronave estiver sob vetoração radar, será proporcionado o serviço de:",
+        "answer0" : "vigilância",
+        "answer1" : "informação de tráfego",
+        "answer2" : "aviso para evitar tráfego",
+        "answer3" : "controle de tráfego aéreo",
+        "correctanswer" : 4
+        },
+        {
+        "type" : "mc",
+        "questionId" : "02",
+        "question" : "O tipo de serviço radar em que o controlador radar não é resposável pela navegação da aeronave, é o de:",
+        "answer0" : "vetoração",
+        "answer1" : "vigilância",
+        "answer2" : "informação",
+        "answer3" : "assessoramento",
+        "correctanswer" : 2
+        },
+        {
+        "type" : "mc",
+        "questionId" : "03",
+        "question" : "Na ordem de prioridade correspondente às aeronaves que partem, a aeronave que terá procedência preferência para a decolagem, independente da sequência de táxi, será a que estiver:",
+        "answer0" : "em operação SAR",
+        "answer1" : "transportando lesionado grave",
+        "answer2" : "em operação militar (manobra)",
+        "answer3" : "conduzindo o Presidente da República",
+        "correctanswer" : 2
+        },
+        {
+        "type" : "mc",
+        "questionId" : "04",
+        "question" : "Em um aeroporto, o local onde se pode prestar o serviço de informação prévia ao voo e receber os planos de voo apresentados antes da partida, é sinalizado por um(a):",
+        "answer0" : "cruz branca dupla",
+        "answer1" : "seta à direita em cor amarela",
+        "answer2" : "letra C de cor negra em fundo amarelo",
+        "answer3" : "quadrado amarelo com uma diagonal vermelha",
+        "correctanswer" : 3
+        },
+        {
+        "type" : "mc",
+        "questionId" : "05",
+        "question" : "Em um circuito de espera sobre um NDB, a perna de aproximação tem o rumo de 270 graus e a de afastamento 090 graus. A aeronave que se aproxima no rumo de 150 graus deverá efetuar entrada: ",
+        "answer0" : "direta",
+        "answer1" : "ainversa",
+        "answer2" : "paralela",
+        "answer3" : "deslocada",
+        "correctanswer" : 3
+        },
+        {
+        "type" : "mc",
+        "questionId" : "06",
+        "question" : "Quando autorizado pelo APP o voo VFR abaixo da VMC realizado dentro de uma TMA ou CTR é o que denominamos de voo visual:",
+        "answer0" : "diurno",
+        "answer1" : "norutno",
+        "answer2" : "especial",
+        "answer3" : "em rota",
+        "correctanswer" : 3
+        },
+        {
+        "type" : "mc",
+        "questionId" : "07",
+        "question" : "O Código Brasileiro de Aeronáutica estabelece a validade da licença do tripulante (comissário, piloto etc) por um pazo de:",
+        "answer0" : "temporário",
+        "answer1" : "permanente",
+        "answer2" : "igual ao do CMA",
+        "answer3" : "de acordo com a idade",
+        "correctanswer" : 2
+        },
+        {
+        "type" : "mc",
+        "questionId" : "08",
+        "question" : "Com o objetivo de chamar a atenção para a aeronave entre o pôr-do-sol, ou em qualquer outro período julgado necessário, todas as aeronaves em voo deverão exibir luzes:",
+        "answer0" : "de táxi",
+        "answer1" : "de pouso",
+        "answer2" : "anti-colisão",
+        "answer3" : "de navegação",
+        "correctanswer" : 3
+        },
+        {
+        "type" : "mc",
+        "questionId" : "09",
+        "question" : "Em uma ocorrência de acidente aeronáutico com uma aeronave de táxi aéreo, o órgao investigador será o(a):",
+        "answer0" : "ANAC",
+        "answer1" : "CIAA",
+        "answer2" : "SIPAER",
+        "answer3" : "SERIPA",
+        "correctanswer" : 4
+        },
+        {
+        "type" : "mc",
+        "questionId" : "10",
+        "question" : "Para a realização de voo sob VFR em ATZ, CTR ou TMA, deve-se apresentar à sala AIS da localidade de partida um(a):",
+        "answer0" : "NTV",
+        "answer1" : "PLN",
+        "answer2" : "RPL",
+        "answer3" : "CPL",
+        "correctanswer" : 1
+        },
+        {
+        "type" : "mc",
+        "questionId" : "11",
+        "question" : "A elevação do aeródromo é de 2.370 pés e uma aeronave turboélice está no ponto médio da perna do vento mantendo a altitude de 3.370 pés. Com base no descrito, pode-se afirmar que a aeronave está:",
+        "answer0" : "acima da altitude correta",
+        "answer1" : "abaixo da altitude correta",
+        "answer2" : "aguardando autorização para pouso",
+        "answer3" : "recebendo informação do aeródromo",
+        "correctanswer" : 3
+        },
+        {
+        "type" : "mc",
+        "questionId" : "12",
+        "question" : "Um Plano de Voo apresentado às 04:00Z, e com hora estimada de calços fora para às 06:05Z tem validade até as:",
+        "answer0" : "06:45Z",
+        "answer1" : "04:35Z",
+        "answer2" : "06:50Z",
+        "answer3" : "04:45Z",
+        "correctanswer" : 3
+     },
+     {
+     "type" : "mc",
+     "questionId" : "13",
+     "question" : "A principal fase de uma trovoada é chamada de fase de:",
+     "answer0" : "cirrus",
+     "answer1" : "dissipação",
+     "answer2" : "cumulus",
+     "answer3" : "maturidade",
+     "correctanswer" : 4
+     },
+     {
+     "type" : "mc",
+     "questionId" : "14",
+     "question" : "O voo controlado pode ser definido por:",
+     "answer0" : "todo voo onde a regra de voo utilizada é a IFR",
+     "answer1" : "todo voo sujeito a autorização de controle de tráfego aéreo",
+     "answer2" : "todo voo realizado dentro de uma FIR",
+     "answer3" : "todo voo onde a responsabilidade pela orientação para navegação da aeronave é do controlador de tráfego",
+     "correctanswer" : 2
+     },
+     {
+     "type" : "mc",
+     "questionId" : "15",
+     "question" : "Após análise do relato de uma situação de anormalidade onde quase ocorreu um acidente, objetivando-se a prevenção, deve-se comentar a ocorrência, dando-se ênfase:",
+     "answer0" : "a situação do problema",
+     "answer1" : "a cada parte envolvida",
+     "answer2" : "aos fatores contribuintes",
+     "answer3" : "aos acontecimentos inevitáveis",
+     "correctanswer" : 3
+     },
+     {
+     "type" : "mc",
+     "questionId" : "16",
+     "question" : "Uma aeronave no circuito de tráfego padrão a 1.000 ft AGL reporta sua posição atual para a TWR e recebe autorização para ingressar na perna de través. A posição reportada foi a:",
+     "answer0" : "perna basa",
+     "answer1" : "perna do vento",
+     "answer2" : "reta de decolagem",
+     "answer3" : "perna contra o vento",
+     "correctanswer" : 4
+     },
+     {
+     "type" : "mc",
+     "questionId" : "17",
+     "question" : "O voo VFR no FL105, dentro de CTR ou TMA de classe D, terá como limite de velocidade:",
+     "answer0" : "250kt",
+     "answer1" : "380kt",
+     "answer2" : "265kt",
+     "answer3" : "175kt",
+     "correctanswer" : 2
+     },
+     {
+     "type" : "mc",
+     "questionId" : "18",
+     "question" : "O AFIS será proporcionado a todo tráfego em operação na área de movimento e a todas as aeronaves em voo no(s):",
+     "answer0" : "espaços aéreos inferior e superior nim raio de 27nm",
+     "answer1" : "espaço aéreo inferior num raio de 50nm",
+     "answer2" : "espaço aéreo inferior num raio de 27nm",
+     "answer3" : "espaços aéreos inferior e superior num raio de 50nm",
+     "correctanswer" : 3
+     },
+     {
+     "type" : "mc",
+     "questionId" : "19",
+     "question" : "Das alternativas abaixo relacionadas, indique qual tem prioridade para pouso:",
+     "answer0" : "planador",
+     "answer1" : "bimotor em emergência",
+     "answer2" : "aeronave SAR",
+     "answer3" : "aeronave transportando enfermo",
+     "correctanswer" : 2
+     },
+     {
+     "type" : "mc",
+     "questionId" : "20",
+     "question" : "A posição crítica na qual a aeronave pede autorização para iniciar o táxi para a decolagem é a de número:",
+     "answer0" : "1",
+     "answer1" : "3",
+     "answer2" : "4",
+     "answer3" : "2",
+     "correctanswer" : 1
+     }
+    ],
+	"hard" : []
+}

@@ -98,7 +98,13 @@
         case ScreenTypeRemoveAds:
             [self performSegueWithIdentifier:@"GoToRemoveAdsSegue" sender:self];
             break;
-            
+        case ScreenTypeMeteoro:
+            [self performSegueWithIdentifier:@"GoToMeteorologia" sender:self];
+            break;
+        case ScreenTypeRegulamentos:
+            [self performSegueWithIdentifier:@"GoToRegulamentos" sender:self];
+            break;
+        
         default:
             break;
     }

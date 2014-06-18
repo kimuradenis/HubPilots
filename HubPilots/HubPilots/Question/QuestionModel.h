@@ -10,11 +10,11 @@
 
 @interface QuestionModel : NSObject
 
-@property (strong, nonatomic) NSMutableArray *navegacao;
-@property (strong, nonatomic) NSMutableArray *meteorologia;
-@property (strong, nonatomic) NSMutableArray *regulamentos;
-@property (strong, nonatomic) NSMutableArray *teoria;
-@property (strong, nonatomic) NSMutableArray *conhecimentos;
+@property (strong, nonatomic) NSMutableArray *navegacaoQuestions;
+@property (strong, nonatomic) NSMutableArray *meteorologiaQuestions;
+@property (strong, nonatomic) NSMutableArray *regulamentosQuestions;
+@property (strong, nonatomic) NSMutableArray *teoriaQuestions;
+@property (strong, nonatomic) NSMutableArray *conhecimentosQuestions;
 
 - (NSMutableArray *)getQuestions:(QuizQuestionSector)sector;
 

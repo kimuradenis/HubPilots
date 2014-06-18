@@ -19,7 +19,9 @@ typedef enum ScreenType {
     ScreenTypeQuestion,
     ScreenTypeStats,
     ScreenTypeAbout,
-    ScreenTypeRemoveAds
+    ScreenTypeRemoveAds,
+    ScreenTypeMeteoro,
+    ScreenTypeRegulamentos
 } MenuItemScreenType;
 
 typedef enum QuestionType {

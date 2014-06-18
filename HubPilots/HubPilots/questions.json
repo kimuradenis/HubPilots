@@ -34,29 +34,29 @@
     [
         {
         "type" : "mc",
-        "question" : "What class do we use to declare a variable to store   text?",
-        "answer0" : "NSStrings",
-        "answer1" : "String",
-        "answer2" : "NSString",
-        "answer3" : "I DONT HAVE IDEA",
+        "question" : "Tipos de Nuvens?",
+        "answer0" : "BC, BBY, CY",
+        "answer1" : "CB, TCU",
+        "answer2" : "CTU, BC",
+        "answer3" : "Cumullos",
         "correctanswer" : 2
         },
         {
         "type" : "mc",
-        "question" : "If you want to store a value for use in multiple methods in the same class, what are possible options?",
-        "answer0" : "Declare and use a property in that class",
-        "answer1" : "Declare and use an instance variable",
-        "answer2" : "Both answers above can be used",
-        "answer3" : "I DONT HAVE IDEA",
+        "question" : "Tempo",
+        "answer0" : "Tempo é representado no Metar",
+        "answer1" : "Tempo é representado no TAF",
+        "answer2" : "Tempo de voo",
+        "answer3" : "Nenhuma das alternativas",
         "correctanswer" : 2
         },
         {
         "type" : "mc",
-        "question" : "What does the keyword, IBOutlet, mean?",
-        "answer0" : "Denotes a property that connects to an element in your storyboard",
-        "answer1" : "Denotes a method that can be connected to an event of a   UIElement in the storyboard",
-        "answer2" : "Denotes a variable that references an element in your storyboard",
-        "answer3" : "I DONT HAVE IDEA",
+        "question" : "SBSP 151500 5000 12/25 Q1023",
+        "answer0" : "TAF",
+        "answer1" : "Metar",
+        "answer2" : "Confeccionado as 12 hrs",
+        "answer3" : "QFE 1023",
         "correctanswer" : 2
         }
     ],

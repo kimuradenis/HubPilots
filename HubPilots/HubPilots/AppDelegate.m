@@ -12,6 +12,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [Parse setApplicationId:@"2Htid6rgt92l9hev3SqRz5vZv0ijyYMXpDCNBDY0"
+                  clientKey:@"KQmMskjTO2X3RTQU0e1w1KczE4raqCQ93KcET2Mf"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
+    
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     // Create a transaction observer and set it as the observer

@@ -15,6 +15,7 @@
 @property (nonatomic) QuizQuestionType questionType;
 @property (nonatomic) QuizQuestionSector questionSector;
 
+
 @property (strong, nonatomic) NSString *questionAnswer1;
 @property (strong, nonatomic) NSString *questionAnswer2;
 @property (strong, nonatomic) NSString *questionAnswer3;

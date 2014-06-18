@@ -50,7 +50,7 @@
     
 /*    // Add tap gesture recognizer to scrollview
     _scrollViewTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollViewTapped)];
-    [self.questionScrollView addGestureRecognizer:_scrollViewTapGestureRecognizer]; */
+    [self.questionScrollView addGestureRecognizer:_scrollViewTapGestureRecognizer];*/
     
     // Add pan gesture recognizer for menu reveal
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];

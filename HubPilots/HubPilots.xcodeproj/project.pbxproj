@@ -38,6 +38,26 @@
 		D216D2EB194C90BE00883524 /* products_id.plist in Resources */ = {isa = PBXBuildFile; fileRef = D216D2EA194C90BE00883524 /* products_id.plist */; };
 		D216D2EF194C914F00883524 /* StoreKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D216D2EE194C914F00883524 /* StoreKitHelper.m */; };
 		D216D2F1194C91D100883524 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D216D2F0194C91D100883524 /* StoreKit.framework */; };
+		D2A72EB5194DE4200017EA0E /* Meteorologia.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A72EAE194DE4200017EA0E /* Meteorologia.m */; };
+		D2A72EB6194DE4200017EA0E /* MeteorologiaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A72EB0194DE4200017EA0E /* MeteorologiaModel.m */; };
+		D2A72EB7194DE4200017EA0E /* MeteorologiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A72EB2194DE4200017EA0E /* MeteorologiaViewController.m */; };
+		D2A72EB8194DE4200017EA0E /* MeteorologiaResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A72EB4194DE4200017EA0E /* MeteorologiaResultView.m */; };
+		D2EAA827194DE7DD00389562 /* meteorologia_pc.json in Resources */ = {isa = PBXBuildFile; fileRef = D2EAA826194DE7DD00389562 /* meteorologia_pc.json */; };
+		D2EAA82C194F30B900389562 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EAA82B194F30B900389562 /* Parse.framework */; };
+		D2EAA82E194F384C00389562 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EAA82D194F384B00389562 /* AudioToolbox.framework */; };
+		D2EAA830194F385700389562 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EAA82F194F385700389562 /* libz.dylib */; };
+		D2EAA832194F386200389562 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EAA831194F386200389562 /* MobileCoreServices.framework */; };
+		D2EAA834194F386A00389562 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EAA833194F386A00389562 /* Security.framework */; };
+		D2EAA836194F387900389562 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EAA835194F387900389562 /* SystemConfiguration.framework */; };
+		D2EAA838194F388200389562 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EAA837194F388200389562 /* CFNetwork.framework */; };
+		D2EAA83A194F389300389562 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EAA839194F389300389562 /* CoreData.framework */; };
+		D2EAA84619506F2000389562 /* SocialViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EAA84519506F2000389562 /* SocialViewCell.m */; };
+		D2EAA8521951D0FA00389562 /* Regulamentos.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EAA8491951D0FA00389562 /* Regulamentos.m */; };
+		D2EAA8531951D0FA00389562 /* RegulamentosModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EAA84B1951D0FA00389562 /* RegulamentosModel.m */; };
+		D2EAA8541951D0FA00389562 /* RegulamentosResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EAA84D1951D0FA00389562 /* RegulamentosResultView.m */; };
+		D2EAA8551951D0FA00389562 /* RegulamentosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EAA84F1951D0FA00389562 /* RegulamentosViewController.m */; };
+		D2EAA8561951D0FA00389562 /* SocialRegViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EAA8511951D0FA00389562 /* SocialRegViewCell.m */; };
+		D2EAA8581951D37200389562 /* regulamentos_pc.json in Resources */ = {isa = PBXBuildFile; fileRef = D2EAA8571951D37200389562 /* regulamentos_pc.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +119,36 @@
 		D216D2ED194C914F00883524 /* StoreKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoreKitHelper.h; path = Helpers/StoreKitHelper.h; sourceTree = "<group>"; };
 		D216D2EE194C914F00883524 /* StoreKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoreKitHelper.m; path = Helpers/StoreKitHelper.m; sourceTree = "<group>"; };
 		D216D2F0194C91D100883524 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D2A72EAD194DE4200017EA0E /* Meteorologia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Meteorologia.h; path = Meteorologia/Meteorologia.h; sourceTree = "<group>"; };
+		D2A72EAE194DE4200017EA0E /* Meteorologia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Meteorologia.m; path = Meteorologia/Meteorologia.m; sourceTree = "<group>"; };
+		D2A72EAF194DE4200017EA0E /* MeteorologiaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeteorologiaModel.h; path = Meteorologia/MeteorologiaModel.h; sourceTree = "<group>"; };
+		D2A72EB0194DE4200017EA0E /* MeteorologiaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeteorologiaModel.m; path = Meteorologia/MeteorologiaModel.m; sourceTree = "<group>"; };
+		D2A72EB1194DE4200017EA0E /* MeteorologiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeteorologiaViewController.h; path = Meteorologia/MeteorologiaViewController.h; sourceTree = "<group>"; };
+		D2A72EB2194DE4200017EA0E /* MeteorologiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeteorologiaViewController.m; path = Meteorologia/MeteorologiaViewController.m; sourceTree = "<group>"; };
+		D2A72EB3194DE4200017EA0E /* MeteorologiaResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeteorologiaResultView.h; path = Meteorologia/MeteorologiaResultView.h; sourceTree = "<group>"; };
+		D2A72EB4194DE4200017EA0E /* MeteorologiaResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeteorologiaResultView.m; path = Meteorologia/MeteorologiaResultView.m; sourceTree = "<group>"; };
+		D2EAA826194DE7DD00389562 /* meteorologia_pc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = meteorologia_pc.json; path = ../../meteorologia_pc.json; sourceTree = "<group>"; };
+		D2EAA82B194F30B900389562 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D2EAA82D194F384B00389562 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D2EAA82F194F385700389562 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D2EAA831194F386200389562 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D2EAA833194F386A00389562 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D2EAA835194F387900389562 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D2EAA837194F388200389562 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D2EAA839194F389300389562 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D2EAA84419506F2000389562 /* SocialViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialViewCell.h; path = Meteorologia/SocialViewCell.h; sourceTree = "<group>"; };
+		D2EAA84519506F2000389562 /* SocialViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialViewCell.m; path = Meteorologia/SocialViewCell.m; sourceTree = "<group>"; };
+		D2EAA8481951D0FA00389562 /* Regulamentos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Regulamentos.h; path = Regulamentos/Regulamentos.h; sourceTree = "<group>"; };
+		D2EAA8491951D0FA00389562 /* Regulamentos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Regulamentos.m; path = Regulamentos/Regulamentos.m; sourceTree = "<group>"; };
+		D2EAA84A1951D0FA00389562 /* RegulamentosModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegulamentosModel.h; path = Regulamentos/RegulamentosModel.h; sourceTree = "<group>"; };
+		D2EAA84B1951D0FA00389562 /* RegulamentosModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegulamentosModel.m; path = Regulamentos/RegulamentosModel.m; sourceTree = "<group>"; };
+		D2EAA84C1951D0FA00389562 /* RegulamentosResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegulamentosResultView.h; path = Regulamentos/RegulamentosResultView.h; sourceTree = "<group>"; };
+		D2EAA84D1951D0FA00389562 /* RegulamentosResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegulamentosResultView.m; path = Regulamentos/RegulamentosResultView.m; sourceTree = "<group>"; };
+		D2EAA84E1951D0FA00389562 /* RegulamentosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegulamentosViewController.h; path = Regulamentos/RegulamentosViewController.h; sourceTree = "<group>"; };
+		D2EAA84F1951D0FA00389562 /* RegulamentosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegulamentosViewController.m; path = Regulamentos/RegulamentosViewController.m; sourceTree = "<group>"; };
+		D2EAA8501951D0FA00389562 /* SocialRegViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialRegViewCell.h; path = Regulamentos/SocialRegViewCell.h; sourceTree = "<group>"; };
+		D2EAA8511951D0FA00389562 /* SocialRegViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialRegViewCell.m; path = Regulamentos/SocialRegViewCell.m; sourceTree = "<group>"; };
+		D2EAA8571951D37200389562 /* regulamentos_pc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = regulamentos_pc.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +156,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2EAA83A194F389300389562 /* CoreData.framework in Frameworks */,
+				D2EAA838194F388200389562 /* CFNetwork.framework in Frameworks */,
+				D2EAA836194F387900389562 /* SystemConfiguration.framework in Frameworks */,
+				D2EAA834194F386A00389562 /* Security.framework in Frameworks */,
+				D2EAA832194F386200389562 /* MobileCoreServices.framework in Frameworks */,
+				D2EAA830194F385700389562 /* libz.dylib in Frameworks */,
+				D2EAA82E194F384C00389562 /* AudioToolbox.framework in Frameworks */,
 				D216D2F1194C91D100883524 /* StoreKit.framework in Frameworks */,
 				D216D2E9194C896B00883524 /* iAd.framework in Frameworks */,
 				D216D2E7194749AF00883524 /* MessageUI.framework in Frameworks */,
+				D2EAA82C194F30B900389562 /* Parse.framework in Frameworks */,
 				D216D2881945D4A300883524 /* CoreGraphics.framework in Frameworks */,
 				D216D28A1945D4A300883524 /* UIKit.framework in Frameworks */,
 				D216D2861945D4A300883524 /* Foundation.framework in Frameworks */,
@@ -150,6 +208,14 @@
 		D216D2841945D4A300883524 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2EAA839194F389300389562 /* CoreData.framework */,
+				D2EAA837194F388200389562 /* CFNetwork.framework */,
+				D2EAA835194F387900389562 /* SystemConfiguration.framework */,
+				D2EAA833194F386A00389562 /* Security.framework */,
+				D2EAA831194F386200389562 /* MobileCoreServices.framework */,
+				D2EAA82F194F385700389562 /* libz.dylib */,
+				D2EAA82D194F384B00389562 /* AudioToolbox.framework */,
+				D2EAA82B194F30B900389562 /* Parse.framework */,
 				D216D2F0194C91D100883524 /* StoreKit.framework */,
 				D216D2E8194C896B00883524 /* iAd.framework */,
 				D216D2E6194749AF00883524 /* MessageUI.framework */,
@@ -164,10 +230,12 @@
 		D216D28B1945D4A300883524 /* HubPilots */ = {
 			isa = PBXGroup;
 			children = (
+				D2EAA8471951D0E200389562 /* Regulamentos */,
 				D216D2EC194C910E00883524 /* Helper */,
 				D216D2941945D4A400883524 /* AppDelegate.h */,
 				D216D2951945D4A400883524 /* AppDelegate.m */,
 				D216D2971945D4A400883524 /* Main.storyboard */,
+				D2A72EAC194DE3E10017EA0E /* Meteorologia */,
 				D216D2BF1945D57300883524 /* RemoveAds */,
 				D216D2BE1945D56D00883524 /* About */,
 				D216D2BD1945D56900883524 /* Menu */,
@@ -183,6 +251,8 @@
 		D216D28C1945D4A300883524 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2EAA826194DE7DD00389562 /* meteorologia_pc.json */,
+				D2EAA8571951D37200389562 /* regulamentos_pc.json */,
 				D216D2E11947356100883524 /* questions.json */,
 				D216D28D1945D4A400883524 /* HubPilots-Info.plist */,
 				D216D28E1945D4A400883524 /* InfoPlist.strings */,
@@ -286,6 +356,40 @@
 			name = Helper;
 			sourceTree = "<group>";
 		};
+		D2A72EAC194DE3E10017EA0E /* Meteorologia */ = {
+			isa = PBXGroup;
+			children = (
+				D2A72EAD194DE4200017EA0E /* Meteorologia.h */,
+				D2A72EAE194DE4200017EA0E /* Meteorologia.m */,
+				D2A72EAF194DE4200017EA0E /* MeteorologiaModel.h */,
+				D2A72EB0194DE4200017EA0E /* MeteorologiaModel.m */,
+				D2A72EB1194DE4200017EA0E /* MeteorologiaViewController.h */,
+				D2A72EB2194DE4200017EA0E /* MeteorologiaViewController.m */,
+				D2A72EB3194DE4200017EA0E /* MeteorologiaResultView.h */,
+				D2A72EB4194DE4200017EA0E /* MeteorologiaResultView.m */,
+				D2EAA84419506F2000389562 /* SocialViewCell.h */,
+				D2EAA84519506F2000389562 /* SocialViewCell.m */,
+			);
+			name = Meteorologia;
+			sourceTree = "<group>";
+		};
+		D2EAA8471951D0E200389562 /* Regulamentos */ = {
+			isa = PBXGroup;
+			children = (
+				D2EAA8481951D0FA00389562 /* Regulamentos.h */,
+				D2EAA8491951D0FA00389562 /* Regulamentos.m */,
+				D2EAA84A1951D0FA00389562 /* RegulamentosModel.h */,
+				D2EAA84B1951D0FA00389562 /* RegulamentosModel.m */,
+				D2EAA84C1951D0FA00389562 /* RegulamentosResultView.h */,
+				D2EAA84D1951D0FA00389562 /* RegulamentosResultView.m */,
+				D2EAA84E1951D0FA00389562 /* RegulamentosViewController.h */,
+				D2EAA84F1951D0FA00389562 /* RegulamentosViewController.m */,
+				D2EAA8501951D0FA00389562 /* SocialRegViewCell.h */,
+				D2EAA8511951D0FA00389562 /* SocialRegViewCell.m */,
+			);
+			name = Regulamentos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -363,7 +467,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D216D29E1945D4A400883524 /* Images.xcassets in Resources */,
+				D2EAA827194DE7DD00389562 /* meteorologia_pc.json in Resources */,
 				D216D2E21947356100883524 /* questions.json in Resources */,
+				D2EAA8581951D37200389562 /* regulamentos_pc.json in Resources */,
 				D216D2901945D4A400883524 /* InfoPlist.strings in Resources */,
 				D216D2991945D4A400883524 /* Main.storyboard in Resources */,
 				D216D2EB194C90BE00883524 /* products_id.plist in Resources */,
@@ -385,21 +491,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2EAA8531951D0FA00389562 /* RegulamentosModel.m in Sources */,
+				D2EAA8561951D0FA00389562 /* SocialRegViewCell.m in Sources */,
 				D216D2961945D4A400883524 /* AppDelegate.m in Sources */,
 				D216D2E519473D3D00883524 /* ResultView.m in Sources */,
 				D216D2E01945E70600883524 /* Question.m in Sources */,
+				D2EAA84619506F2000389562 /* SocialViewCell.m in Sources */,
+				D2EAA8551951D0FA00389562 /* RegulamentosViewController.m in Sources */,
 				D216D2D11945D71000883524 /* RemoveAdsViewController.m in Sources */,
 				D216D2921945D4A400883524 /* main.m in Sources */,
 				D216D2C21945D6A200883524 /* QuestionViewController.m in Sources */,
 				D216D2CE1945D6FC00883524 /* AboutViewController.m in Sources */,
+				D2EAA8541951D0FA00389562 /* RegulamentosResultView.m in Sources */,
 				D216D2C51945D6B700883524 /* QuestionModel.m in Sources */,
 				D216D2CB1945D6E000883524 /* MenuModel.m in Sources */,
 				D216D2EF194C914F00883524 /* StoreKitHelper.m in Sources */,
 				D216D2C81945D6CC00883524 /* MenuViewController.m in Sources */,
 				D216D2DA1945D7A600883524 /* SWRevealViewController.m in Sources */,
 				D216D2DD1945DA5B00883524 /* MenuItem.m in Sources */,
+				D2A72EB5194DE4200017EA0E /* Meteorologia.m in Sources */,
+				D2A72EB7194DE4200017EA0E /* MeteorologiaViewController.m in Sources */,
+				D2A72EB8194DE4200017EA0E /* MeteorologiaResultView.m in Sources */,
+				D2A72EB6194DE4200017EA0E /* MeteorologiaModel.m in Sources */,
 				D216D2D41945D72000883524 /* StatsViewController.m in Sources */,
 				D216D2D71945D73000883524 /* StatsModel.m in Sources */,
+				D2EAA8521951D0FA00389562 /* Regulamentos.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +640,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HubPilots/HubPilots-Prefix.pch";
 				INFOPLIST_FILE = "HubPilots/HubPilots-Info.plist";
@@ -537,6 +657,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HubPilots/HubPilots-Prefix.pch";
 				INFOPLIST_FILE = "HubPilots/HubPilots-Info.plist";

@@ -24,13 +24,13 @@
     MenuItem *item2 = [[MenuItem alloc]init];
     item2.menuTitle = @"Regulamentos";
     item2.menuIcon = @"RegMenuIcon";
-    item2.screenType = ScreenTypeQuestion;
+    item2.screenType = ScreenTypeRegulamentos;
     [menuItemArray addObject:item2];
     
     MenuItem *item3 = [[MenuItem alloc]init];
     item3.menuTitle = @"Meteorologia";
     item3.menuIcon = @"MetMenuIcon";
-    item3.screenType = ScreenTypeQuestion;
+    item3.screenType = ScreenTypeMeteoro;
     [menuItemArray addObject:item3];
     
     MenuItem *item4 = [[MenuItem alloc]init];
@@ -62,6 +62,8 @@
     item8.menuIcon = @"RemoveAdsMenuIcon";
     item8.screenType = ScreenTypeRemoveAds;
     [menuItemArray addObject:item8];
+    
+
     
 
     
